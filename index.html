@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <h1 id="title">We can help each other</h1>
+  <p id="description">And Tom want's to know how </p>
+  <form id="survey-form">
+   <fieldset>
+    <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+    <label id="email-label">Email: <input id="email" type="email" placeholder="Enter you email"required ></label>
+    <label id="number-label">Age (years): <input id="number" type="number" placeholder="Years" min="13" max="120" required></label>
+
+    <label>How did you hear about us?
+      <select id="dropdown">
+        <option value="">Select one</option>
+        <option value="1">Instagram </option>
+        <option value="2">Facebook</option>
+        <option value="3">Twitter</option>
+        <option value="4">Somebody told me </option>
+      </select>
+      </label>
+      <label id="what-kind-of"> What kind of musician are you?  
+      <label id="radio-label"><input type="radio" name="what-kind" class="inline" value="0"> Amateur </label>
+      <label id="radio-label-2"><input type="radio" name="what-kind" class="inline" value="1"> Professional</label>
+      <label id="radio-label-3"><input type="radio" name="what-kind" class="inline" value="2"> Candidate</label>
+      </label>
+      <label id="favourites">What kind of instruments like's you more?
+        <label><input type="checkbox" class="inline" name="voice" value="0"> Voice</label>
+        <label><input type="checkbox" class="inline" name="strings" value="1"> Strings</label>
+        <label><input type="checkbox" class="inline" name="percussion" value="2"> Percussion</label>
+        <label><input type="checkbox" class="inline" name="winds" value="3"> Winds</label>
+        <label><input type="checkbox" class="inline" name="rare" value="4"> Rare instruments</label>
+      </label>
+      <label id="suggestion">Please give us your suggestions:
+        <textarea name="suggestions" rows="4" cols="40" placeholder="Thanks for your suggestions!"></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit">
+      </fieldset>
+  </form>
+  <footer>
+    <p>Tom's Music Store </p>
+    </footer>
+  </body>
+</html>
